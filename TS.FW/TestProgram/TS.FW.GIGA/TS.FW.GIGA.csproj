@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E0C2B515-D068-4AD6-BB83-9E4CEFC14038}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TS.FW.GIGA</RootNamespace>
+    <AssemblyName>TS.FW.GIGA</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\Thinksoft\TS.FW.GIGA\Exe\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Program.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TS.FW">
+      <HintPath>..\..\..\..\..\TS.FW.ver1\TS.FW\TS.FW.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.FW.Dac">
+      <HintPath>..\..\..\..\..\TS.FW.ver1\TS.FW.Dac\TS.FW.Dac.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.FW.Dac.Alarm">
+      <HintPath>..\..\..\..\..\TS.FW.ver1\TS.FW.Dac.Alarm\TS.FW.Dac.Alarm.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.FW.Dac.Cfg">
+      <HintPath>..\..\..\..\..\TS.FW.ver1\TS.FW.Dac.Cfg\TS.FW.Dac.Cfg.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.FW.Device">
+      <HintPath>..\..\..\..\..\TS.FW.ver1\TS.FW.Device\TS.FW.Device.dll</HintPath>
+    </Reference>
+    <Reference Include="TS.FW.Wpf.v2">
+      <HintPath>..\..\TS.FW.Wpf.v2\obj\Debug\TS.FW.Wpf.v2.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Controls\UserEdit.xaml.cs">
+      <DependentUpon>UserEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="eAlarm.cs" />
+    <Compile Include="AP.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Configs\UserDB.cs" />
+    <Compile Include="eEnum.cs" />
+    <Compile Include="Managers\AlarmManager.cs" />
+    <Compile Include="Managers\DeviceManager.cs" />
+    <Compile Include="Managers\Device\DeviceManager.Motion.cs" />
+    <Compile Include="Managers\InOutManager.cs" />
+    <Compile Include="Managers\InOut\InOutManager.BitChange.cs" />
+    <Compile Include="Managers\InOut\InOutManager.Cylinder.cs" />
+    <Compile Include="Managers\InOut\InOutManager.In.cs" />
+    <Compile Include="Managers\InOut\InOutManager.Out.cs" />
+    <Compile Include="Managers\InOut\InOutManager.Tension.cs" />
+    <Compile Include="Managers\InOut\InOutManager.Vacuum.cs" />
+    <Compile Include="Managers\NetManager.cs" />
+    <Compile Include="Managers\RecipeManager.cs" />
+    <Compile Include="Managers\SystemManager.cs" />
+    <Compile Include="Models\IRecipeModel.cs" />
+    <Compile Include="Models\NetworkState.cs" />
+    <Compile Include="Models\Setup\AxisModel.cs" />
+    <Compile Include="Models\Setup\InOutModel.cs" />
+    <Compile Include="Models\Setup\MotionModel.cs" />
+    <Compile Include="Models\TowerLamp.cs" />
+    <Compile Include="Networks\INetSerialPort.cs" />
+    <Compile Include="Networks\NetLoadcell.cs" />
+    <Compile Include="Networks\NetRequlator.cs" />
+    <Compile Include="Networks\NetUvLamp.cs" />
+    <Compile Include="Networks\NetVstLed.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\Pages\Alarm\AlarmHistoryViewModel.cs" />
+    <Compile Include="ViewModels\Pages\Alarm\AlarmMainViewModel.cs" />
+    <Compile Include="ViewModels\Pages\Alarm\AlarmSettingViewModel.cs" />
+    <Compile Include="ViewModels\Pages\Config\CfgMainViewModel.cs" />
+    <Compile Include="ViewModels\Pages\DashBoard\DashMainViewModel.cs" />
+    <Compile Include="ViewModels\Pages\MainPage.cs" />
+    <Compile Include="ViewModels\Pages\Recipe\RcpMainViewModel.cs" />
+    <Compile Include="ViewModels\Pages\Service\SvcMainViewModel.cs" />
+    <Compile Include="ViewModels\Pages\Setup\SetupInOutViewMdoel.cs" />
+    <Compile Include="ViewModels\Pages\Setup\SetupMotionCameraViewMdoel.cs" />
+    <Compile Include="ViewModels\Pages\Setup\SetupMotionStageViewMdoel.cs" />
+    <Compile Include="ViewModels\Pages\Setup\SetupMotionUvwViewMdoel.cs" />
+    <Compile Include="ViewModels\Pages\SubPage.cs" />
+    <Compile Include="ViewModels\Pages\Utility\UtLogFileViewModel.cs" />
+    <Compile Include="ViewModels\Pages\Utility\UtUserViewModel.cs" />
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Alarm\AlarmHistoryView.xaml.cs">
+      <DependentUpon>AlarmHistoryView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Alarm\AlarmMainView.xaml.cs">
+      <DependentUpon>AlarmMainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Alarm\AlarmSettingView.xaml.cs">
+      <DependentUpon>AlarmSettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\DashBoard\DashMainView.xaml.cs">
+      <DependentUpon>DashMainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\MainPageView.xaml.cs">
+      <DependentUpon>MainPageView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Setup\SetupInOutView.xaml.cs">
+      <DependentUpon>SetupInOutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Setup\SetupMotionView.xaml.cs">
+      <DependentUpon>SetupMotionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Utility\UtLogFileView.xaml.cs">
+      <DependentUpon>UtLogFileView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Pages\Utility\UtUserView.xaml.cs">
+      <DependentUpon>UtUserView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Assets\Alarm.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Config.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Program.ico" />
+    <Resource Include="Assets\로고.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Controls\UserEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Brushs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Buttons.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\ColorData.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Converters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\ScrollViewer.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\TextBlock.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Windows.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\Alarm\AlarmHistoryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\Alarm\AlarmMainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\Alarm\AlarmSettingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\DashBoard\DashMainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\MainPageView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\Setup\SetupInOutView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\Setup\SetupMotionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\Utility\UtLogFileView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Pages\Utility\UtUserView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Process\" />
+    <Folder Include="Views\Pages\Config\" />
+    <Folder Include="Views\Pages\Recipe\" />
+    <Folder Include="Views\Pages\Service\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Program.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\x64\SQLite.Interop.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\x86\SQLite.Interop.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,27 @@
+09:37:25.884 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:37:35.895 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:38:36.340 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:38:56.925 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:39:06.923 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:39:34.652 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:39:44.644 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:41:50.576 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:44:33.129 [E] SdcXComManager(RecvMessage) : S1F6 => System.NotSupportedException: S1F6
+   위치: TS.FW.XCom.Core.XComReader.FindMessage(Int32 stream, Int32 function, IXComData data) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\Core\XComReader.cs:줄 50
+   위치: TS.FW.XCom.XComManager.RecvMessage(XComMsgInfo info) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\XComManager.cs:줄 145
+09:46:09.258 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:46:19.267 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:47:22.324 [E] SdcXComManager(RecvMessage) : S1F6 => System.NotSupportedException: S1F6
+   위치: TS.FW.XCom.Core.XComReader.FindMessage(Int32 stream, Int32 function, IXComData data) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\Core\XComReader.cs:줄 50
+   위치: TS.FW.XCom.XComManager.RecvMessage(XComMsgInfo info) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\XComManager.cs:줄 145
+09:48:59.445 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:54:39.887 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+09:57:29.419 [E] SdcXComManager(RecvMessage) : S1F6 => System.NotSupportedException: S1F6
+   위치: TS.FW.XCom.Core.XComReader.FindMessage(Int32 stream, Int32 function, IXComData data) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\Core\XComReader.cs:줄 50
+   위치: TS.FW.XCom.XComManager.RecvMessage(XComMsgInfo info) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\XComManager.cs:줄 145
+09:57:39.867 [E] SdcXComManager(RecvMessage) : S1F6 => System.NotSupportedException: S1F6
+   위치: TS.FW.XCom.Core.XComReader.FindMessage(Int32 stream, Int32 function, IXComData data) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\Core\XComReader.cs:줄 50
+   위치: TS.FW.XCom.XComManager.RecvMessage(XComMsgInfo info) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\XComManager.cs:줄 145
+09:58:51.786 [E] SdcXComManager(RecvMessage) : S1F6 => System.NotSupportedException: S1F6
+   위치: TS.FW.XCom.Core.XComReader.FindMessage(Int32 stream, Int32 function, IXComData data) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\Core\XComReader.cs:줄 50
+   위치: TS.FW.XCom.XComManager.RecvMessage(XComMsgInfo info) 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\XComManager.cs:줄 145

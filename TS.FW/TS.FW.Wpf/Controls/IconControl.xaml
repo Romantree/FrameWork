@@ -1,0 +1,135 @@
+﻿<UserControl x:Class="TS.FW.Wpf.Controls.IconControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TS.FW.Wpf.Controls"
+             mc:Ignorable="d" IsHitTestVisible="False" Focusable="False"
+             d:DesignHeight="32" d:DesignWidth="32">
+    <UserControl.Template>
+        <ControlTemplate TargetType="UserControl">
+            <ControlTemplate.Resources>
+                
+            </ControlTemplate.Resources>
+
+            <Rectangle x:Name="xIcon" IsHitTestVisible="{TemplateBinding IsHitTestVisible}" Focusable="{TemplateBinding Focusable}"
+                       Fill="{TemplateBinding Background}"/>
+
+            <ControlTemplate.Triggers>
+                <Trigger Property="local:IconControl.Icon" Value="None">
+                    <Setter TargetName="xIcon" Property="Visibility" Value="Collapsed"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Custom">
+                    <Setter TargetName="xIcon" Property="Visibility" Value="Visible"/>
+                    <Setter TargetName="xIcon" Property="OpacityMask">
+                        <Setter.Value>
+                            <VisualBrush Stretch="Uniform" Visual="{Binding Visual, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type local:IconControl}}}"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Select">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xSelect}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Refresh">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xRefresh}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="New">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xNew}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Delete">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xDelete}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Copy">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xCopy}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Save">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xSave}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Buzzer">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xBuzzer}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Alarm">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xAlarm}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Light">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xLight}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Left">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xLeft}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Right">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xRight}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Up">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xUp}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Down">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xDown}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="CW">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xCW}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="CCW">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xCCW}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Lock">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xLock}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Unlock">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xUnlock}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Search">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xSearch}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Home">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xHome}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Laptop">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xLaptop}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="MonitorPlay">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xMonitorPlay}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Cogs">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xCogs}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Cabinet">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xCabinet}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Card">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xCard}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Chat">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xChat}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Folder">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xFolder}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="FromBasic">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xFromBasic}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="ListGear">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xListGear}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="ListSelect">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xListSelect}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Connect">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xConnect}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Disconnect">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xDisconnect}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Server">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xServer}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Settings">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xSettings}"/>
+                </Trigger>
+                <Trigger Property="local:IconControl.Icon" Value="Link">
+                    <Setter TargetName="xIcon" Property="OpacityMask" Value="{StaticResource xLink}"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </UserControl.Template>
+</UserControl>

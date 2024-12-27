@@ -1,0 +1,16 @@
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\TS.FW.Efu.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\TS.FW.Efu.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\TS.FW.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\Newtonsoft.Json.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\TS.FW.Wpf.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\TS.FW.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\TS.FW.Net.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\Newtonsoft.Json.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\Newtonsoft.Json.xml
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\TS.FW.Wpf.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\obj\Debug\TS.FW.Efu.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\obj\Debug\TS.FW.Efu.csproj.CopyComplete
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\obj\Debug\TS.FW.Efu.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\obj\Debug\TS.FW.Efu.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\obj\Debug\TS.FW.Efu.csproj.AssemblyReference.cache
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Efu\TS.FW.Efu\bin\Debug\TS.FW.Net.dll

@@ -1,0 +1,7 @@
+C:\TS.FW.ver1\Linkgenesis\TS.FW.XCom\TS.FW.XCom.dll
+C:\TS.FW.ver1\Linkgenesis\TS.FW.XCom\TS.FW.XCom.pdb
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\obj\Debug\TS.FW.XCom.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\obj\Debug\TS.FW.XCom.dll
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\obj\Debug\TS.FW.XCom.pdb
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\obj\Debug\TS.FW.XCom.csproj.AssemblyReference.cache
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\obj\Debug\TS.FW.XCom.csproj.Up2Date

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{147E9F91-4792-4280-8AF8-7976BBD44A25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TS.FW.Wpf</RootNamespace>
+    <AssemblyName>TS.FW.Wpf</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\TS.FW.ver1\TS.FW.Wpf\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Deploy\TS.Framework.Wpf\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\..\..\..\TS.FW.ver1\x64\TS.FW.Wpf\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Border3D.xaml.cs">
+      <DependentUpon>Border3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Button3D.xaml.cs">
+      <DependentUpon>Button3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckButton3D.xaml.cs">
+      <DependentUpon>CheckButton3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ComboButton3D.xaml.cs">
+      <DependentUpon>ComboButton3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DateButton3D.xaml.cs">
+      <DependentUpon>DateButton3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\IconControl.xaml.cs">
+      <DependentUpon>IconControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Label3D.xaml.cs">
+      <DependentUpon>Label3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuList.xaml.cs">
+      <DependentUpon>MenuList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuView.xaml.cs">
+      <DependentUpon>MenuView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OnOffControl.xaml.cs">
+      <DependentUpon>OnOffControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pu\Keyboard.xaml.cs">
+      <DependentUpon>Keyboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pu\ListMsgBox.xaml.cs">
+      <DependentUpon>ListMsgBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pu\MsgBox.xaml.cs">
+      <DependentUpon>MsgBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pu\NumberPad.xaml.cs">
+      <DependentUpon>NumberPad.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Pu\PuLodingView.xaml.cs">
+      <DependentUpon>PuLodingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RadioButton3D.xaml.cs">
+      <DependentUpon>RadioButton3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RobotArmControl.xaml.cs">
+      <DependentUpon>RobotArmControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RobotControl.xaml.cs">
+      <DependentUpon>RobotControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TextBox3D.xaml.cs">
+      <DependentUpon>TextBox3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ToggleButton3D.xaml.cs">
+      <DependentUpon>ToggleButton3D.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ZoomControl.xaml.cs">
+      <DependentUpon>ZoomControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\BoolReverseConverter.cs" />
+    <Compile Include="Converters\ColorBrushConverter.cs" />
+    <Compile Include="Converters\IsNullValueConverter.cs" />
+    <Compile Include="Converters\IsNullVisibilityConverter.cs" />
+    <Compile Include="Converters\OnOffColorConverter.cs" />
+    <Compile Include="Converters\StringConverter.cs" />
+    <Compile Include="Converters\VisibilityConverter.cs" />
+    <Compile Include="ControlProperty.cs" />
+    <Compile Include="Core\CommandLog.cs" />
+    <Compile Include="Core\DataModelBase.cs" />
+    <Compile Include="Core\IMenuViewModel.cs" />
+    <Compile Include="Core\NormalCommand.cs" />
+    <Compile Include="Core\ModelBase.cs" />
+    <Compile Include="Core\ViewModelBase.cs" />
+    <Compile Include="Helper\DataGridSelectedCellsBehavior.cs" />
+    <Compile Include="Helper\DataHelper.cs" />
+    <Compile Include="Helper\Data\KeyboardKoreaChar.cs" />
+    <Compile Include="Helper\Data\KeyCodeModel.cs" />
+    <Compile Include="Helper\DateTimeHelper.cs" />
+    <Compile Include="Helper\DoEvent.cs" />
+    <Compile Include="Helper\GridHelper.cs" />
+    <Compile Include="Helper\ImageHelper.cs" />
+    <Compile Include="Helper\KeyboardHelper.cs" />
+    <Compile Include="Helper\ResourceHelper.cs" />
+    <Compile Include="Helper\TreeViewSelectedItemBehavior.cs" />
+    <Compile Include="Popup\IPopupBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TS.FW\TS.FW.csproj">
+      <Project>{121d01e7-75a0-4c0e-be19-199a9c83cf6f}</Project>
+      <Name>TS.FW</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="Controls\Border3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Button3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\CheckButton3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ComboButton3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\DateButton3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\IconControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Label3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MenuList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MenuView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\OnOffControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Pu\Keyboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Pu\ListMsgBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Pu\MsgBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Pu\NumberPad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Pu\PuLodingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\RadioButton3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\RobotArmControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\RobotControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\TextBox3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ToggleButton3D.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ZoomControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Image.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

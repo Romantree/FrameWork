@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26B3745F-9776-4E21-8FD1-DEA718227472}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TS.FW.XCom.K2</RootNamespace>
+    <AssemblyName>TS.FW.XCom.K2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Assembly\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XCOMLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d44180783df80efe, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Linkgenesis\Lib\XCOMLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F000_AbortTransaction_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F001_AreYouThereRequest_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F002_OnLineData_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F003_SelectedEquipmentStateRequest_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F004_SelectedEquipmentStateData_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F005_FormattedStateRequest_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F006_FormattedStateData_EqOnline_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F006_FormattedStateData_GlassTracking_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F006_FormattedStateData_ModuleState_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F017_RequestOnlineModeChange_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream001\S1F018_OnlineAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F015_NewEquipmentConstantSend_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F016_NewEquipmentConstantAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F024_TraceInitializeAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F029_EquipmentConstantNamelistRequest_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F030_EquipmentConstantNamelist_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F031_DateAndTimeSetRequest_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F032_DateAndTimeSetAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F041_HostCommandSend_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F042_HostCommandAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F101_OperatorCall_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F102_OperatorCallReply_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F103_EquipmentOnlineParameterChange_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream002\S2F104_EquipmentOnlineParameterAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream003\S3F102_CassetteInformationRely_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream003\S3F122_GlassUnitInformationRely_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream005\S5F005_AlarmListRequest_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream005\S5F101_WaitingResetAlarmsList_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F001_TraceDataSend_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F011_EventReportSend_EquipmentParameter_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F011_EventReportSend_EquipmentSpecifiedControl_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F011_EventReportSend_Equipment_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F011_EventReportSend_GlassProcess_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F011_EventReportSend_JobProcess_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F011_EventReportSend_ReadingRate_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F012_EventReportAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F013_NameListVariableDataSend_GlassDataCollection_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F013_NameListVariableDataSend_LotDataCollection_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream006\S6F014_AnnotatedEventReportAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F001_ProcessProgramLoadInquire_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F002_ProcessProgramLoadGrant_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F021_RemoteSetForFormattedProcessProgram_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F022_ReplyForRemoteSetFormatted_Process_Program_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F023_FormattedProcessProgramSend_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F024_FormattedProcessProgramAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F025_FormattedProcessProgramRequest_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F026_FormattedProcessProgramData_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F101_CurrentEquipmentPPIDListRequest_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F102_CurrentEquipmentPPIDData_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F103_PPIDExistenceCheck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F104_PPIDExistenceCheckAck_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F107_PPBodyModifyReport_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F108_PPBodyModifyReport_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F109_CurrentRunningEquipmentPPIDRequest_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream007\S7F110_CurrentRunningEquipmentPPIDData_Model.cs" />
+    <Compile Include="TS\FW\XCom\K2\Stream010\S10F003_TerminalDisplaySingle_Model.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Linkgenesis\TS.FW.XCom\TS.FW.XCom.csproj">
+      <Project>{fa5f2f7a-1032-4cae-a483-3c66fe5224d5}</Project>
+      <Name>TS.FW.XCom</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TS.FW\TS.FW.csproj">
+      <Project>{121d01e7-75a0-4c0e-be19-199a9c83cf6f}</Project>
+      <Name>TS.FW</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

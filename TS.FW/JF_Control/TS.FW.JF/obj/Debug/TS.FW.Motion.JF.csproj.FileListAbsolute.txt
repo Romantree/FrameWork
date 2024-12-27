@@ -1,0 +1,7 @@
+C:\000.Source\TS.FW\Deploy\TS.FW.Motion.JF\TS.FW.Motion.JF.dll
+C:\000.Source\TS.FW\Deploy\TS.FW.Motion.JF\TS.FW.Motion.JF.pdb
+C:\000.Source\TS.FW\TS.FW\TS.FW.Motion.JF\obj\Debug\TS.FW.Motion.JF.csprojAssemblyReference.cache
+C:\000.Source\TS.FW\TS.FW\TS.FW.Motion.JF\obj\Debug\TS.FW.Motion.JF.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\TS.FW.Motion.JF\obj\Debug\TS.FW.Motion.JF.csproj.CopyComplete
+C:\000.Source\TS.FW\TS.FW\TS.FW.Motion.JF\obj\Debug\TS.FW.Motion.JF.dll
+C:\000.Source\TS.FW\TS.FW\TS.FW.Motion.JF\obj\Debug\TS.FW.Motion.JF.pdb

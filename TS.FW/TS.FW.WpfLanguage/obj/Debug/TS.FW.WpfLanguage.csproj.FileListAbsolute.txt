@@ -1,0 +1,9 @@
+C:\TS.FW.ver1\TS.FW.Language\x64\SQLite.Interop.dll
+C:\TS.FW.ver1\TS.FW.Language\x86\SQLite.Interop.dll
+C:\TS.FW.ver1\TS.FW.Language\TS.FW.WpfLanguage.dll
+C:\TS.FW.ver1\TS.FW.Language\TS.FW.WpfLanguage.pdb
+C:\000.Source\TS.FW\TS.FW\TS.FW.WpfLanguage\obj\Debug\TS.FW.WpfLanguage.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\TS.FW.WpfLanguage\obj\Debug\TS.FW.WpfLanguage.dll
+C:\000.Source\TS.FW\TS.FW\TS.FW.WpfLanguage\obj\Debug\TS.FW.WpfLanguage.pdb
+C:\000.Source\TS.FW\TS.FW\TS.FW.WpfLanguage\obj\Debug\TS.FW.WpfLanguage.csproj.AssemblyReference.cache
+C:\000.Source\TS.FW\TS.FW\TS.FW.WpfLanguage\obj\Debug\TS.FW.Wp.F881BF6F.Up2Date

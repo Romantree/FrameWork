@@ -1,0 +1,12 @@
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\bin\x64\Debug\TS.FW.XCom.dll
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\bin\x64\Debug\TS.FW.XCom.pdb
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\bin\x64\Debug\TS.FW.dll
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\bin\x64\Debug\XCOMLib.dll
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\bin\x64\Debug\Newtonsoft.Json.dll
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\bin\x64\Debug\TS.FW.pdb
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\bin\x64\Debug\Newtonsoft.Json.pdb
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\bin\x64\Debug\Newtonsoft.Json.xml
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\obj\x64\Debug\TS.FW.XCom.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\obj\x64\Debug\TS.FW.XCom.csproj.CopyComplete
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\obj\x64\Debug\TS.FW.XCom.dll
+C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\obj\x64\Debug\TS.FW.XCom.pdb

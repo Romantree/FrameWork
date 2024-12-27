@@ -1,0 +1,15 @@
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\TS.FW.XCom.K2.dll
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\TS.FW.XCom.K2.pdb
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\Newtonsoft.Json.dll
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\TS.FW.dll
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\TS.FW.XCom.dll
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\XCOMLib.dll
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\TS.FW.XCom.pdb
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\TS.FW.pdb
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\Newtonsoft.Json.pdb
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\bin\Debug\Newtonsoft.Json.xml
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\obj\Debug\TS.FW.XCom.K2.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\obj\Debug\TS.FW.XCom.K2.dll
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\obj\Debug\TS.FW.XCom.K2.pdb
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\obj\Debug\TS.FW.XCom.K2.csproj.AssemblyReference.cache
+C:\000.Source\TS.FW\TS.FW\TestProgram\TS.FW.XCom.K2\obj\Debug\TS.FW.XC.B130C461.Up2Date

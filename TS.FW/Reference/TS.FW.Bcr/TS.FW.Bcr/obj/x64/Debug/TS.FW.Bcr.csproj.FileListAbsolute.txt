@@ -1,0 +1,16 @@
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\TS.FW.Bcr.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\TS.FW.Bcr.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\TS.FW.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\TS.FW.Net.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\Newtonsoft.Json.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\TS.FW.Wpf.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\TS.FW.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\TS.FW.Net.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\Newtonsoft.Json.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\Newtonsoft.Json.xml
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\bin\x64\Debug\TS.FW.Wpf.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\obj\x64\Debug\TS.FW.Bcr.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\obj\x64\Debug\TS.FW.Bcr.csproj.CopyComplete
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\obj\x64\Debug\TS.FW.Bcr.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\obj\x64\Debug\TS.FW.Bcr.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Bcr\TS.FW.Bcr\obj\x64\Debug\TS.FW.Bcr.csproj.AssemblyReference.cache

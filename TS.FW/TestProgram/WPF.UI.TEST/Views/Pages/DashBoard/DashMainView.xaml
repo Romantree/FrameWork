@@ -1,0 +1,108 @@
+﻿<UserControl x:Class="WPF.UI.TEST.Views.Pages.DashBoard.DashMainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"              
+             xmlns:local="clr-namespace:WPF.UI.TEST.Views.Pages.DashBoard"
+             xmlns:vm="clr-namespace:WPF.UI.TEST.ViewModels.Pages.DashBoard"
+             xmlns:tc="clr-namespace:TS.FW.Wpf.v2.Controls;assembly=TS.FW.Wpf.v2"
+             mc:Ignorable="d" d:DataContext="{d:DesignInstance vm:DashMainViewModel}"
+             Style="{StaticResource xSubPage}">
+    <Canvas>
+        <Canvas.Resources>
+            <Style TargetType="tc:OnOffBtn">
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="Height" Value="50"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="MarginContent" Value="3"/>
+                <Setter Property="IsChecked" Value="{Binding IsAuto}"/>
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="ContentColor" Value="{Binding RelativeSource={RelativeSource Mode=Self}, Path=IsChecked, Converter={StaticResource xColorCvt}, ConverterParameter=OnOff}"/>
+                <Setter Property="Foreground" Value="White"/>
+            </Style>
+        </Canvas.Resources>
+
+        <tc:GroupBox3D Header="Login" Width="250" Background="White" Canvas.Left="16" Canvas.Top="10">
+            <StackPanel>
+                <tc:CaptionValue Caption="ID" Background="White" Height="30">
+                    <tc:ValueBtn Margin="1" Content="{Binding ID}"/>
+                </tc:CaptionValue>
+                <tc:CaptionValue Caption="Password" Background="White" Height="30">
+                    <tc:ValueBtn Margin="1" Content="{Binding PASSWORD}" Password="True"/>
+                </tc:CaptionValue>
+
+                <tc:EventBtn Content="LOGIN" Background="Green" Foreground="White" Style="{StaticResource xEventBase}"/>
+            </StackPanel>
+        </tc:GroupBox3D>
+
+        <tc:GroupBox3D Header="Data" Width="350" Background="White" Canvas.Left="16" Canvas.Top="150" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <StackPanel>
+                <tc:CaptionValue Caption="MIN" Background="Green" Foreground="White" Height="50" MarginCaption="5">
+                    <tc:ValueBtn Margin="5" Content="{Binding Min}"/>
+                </tc:CaptionValue>
+                <tc:CaptionValue Caption="MAX" Background="Green" Foreground="White" Height="50" MarginCaption="5">
+                    <tc:ValueBtn Margin="5" Content="{Binding Max}"/>
+                </tc:CaptionValue>
+                <tc:CaptionValue Caption="VALUE" Background="Red" Foreground="White" Height="50" MarginCaption="5">
+                    <tc:ValueBtn Margin="5" Content="{Binding Value}" Min="{Binding Min}" Max="{Binding Max}"/>
+                </tc:CaptionValue>
+            </StackPanel>
+        </tc:GroupBox3D>
+
+        <tc:GroupBox3D Header="Messag Box" Width="750" Background="White" Canvas.Left="16" Canvas.Top="356" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <StackPanel>
+                <tc:CaptionValue Caption="Message" Background="Green" Foreground="White" Height="50" MarginCaption="5">
+                    <tc:ValueBtn Margin="5" Content="{Binding Message}"/>
+                </tc:CaptionValue>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <tc:EventBtn Content="CLOSE" Width="150" Margin="2" Style="{StaticResource xEventBase}"/>
+                    <tc:EventBtn Content="YES/NO" Width="150" Margin="2" Style="{StaticResource xEventBase}"/>
+                    <tc:EventBtn Content="OK/CANCLE" Width="150" Margin="2" Style="{StaticResource xEventBase}"/>
+                </StackPanel>
+            </StackPanel>
+        </tc:GroupBox3D>
+
+
+        <tc:GroupBox3D Header="On Off Button" Width="450" Background="White" Canvas.Left="16" Canvas.Top="490">
+            <StackPanel>
+                <tc:CaptionValue Caption="중복 누르기 O" Background="White" MarginCaption="5">
+                    <tc:OnOffBtn On="Auto" Off="Manual" IsCapture="False" Canvas.Left="16" Canvas.Top="518"/>
+                </tc:CaptionValue>
+                <tc:CaptionValue Caption="중복 누르기 X" Background="White" MarginCaption="5">
+                    <tc:OnOffBtn On="Auto" Off="Manual" IsCapture="True" Canvas.Left="16" Canvas.Top="580"/>
+                </tc:CaptionValue>
+                <tc:CaptionValue Caption="Check Btn" Background="White" MarginCaption="5">
+                    <tc:CheckBtn Height="50" IconSize="50" IsChecked="{Binding IsAuto}" Content="체크 버튼" Margin="5" IconMargin="10" Background="White"/>
+                </tc:CaptionValue>
+                <tc:CaptionValue Caption="Radio Btn" Background="White" MarginCaption="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <tc:RadioBtn Grid.Column="0" Height="50" IconSize="50" IsChecked="{Binding IsAuto}" Content="라디오 버튼 1" Margin="5" IconMargin="10" Background="White"/>
+                        <tc:RadioBtn Grid.Column="1" Height="50" IconSize="50" IsChecked="{Binding IsManual}" Content="라디오 버튼 2" Margin="5" IconMargin="10" Background="White"/>
+                    </Grid>
+                </tc:CaptionValue>
+            </StackPanel>
+        </tc:GroupBox3D>
+
+        <tc:GroupBox3D Header="ComboBox" Width="450" Background="White" Canvas.Left="485" Canvas.Top="490">
+            <StackPanel>
+                <tc:CaptionValue Caption="콤보 박스" Background="White" MarginCaption="5">
+                    <tc:ComboBtn Height="50" Margin="2" ItemsSource="{Binding List}" SelectedItem="{Binding SelectedItem}" FontSize="20" Focusable="False" FontWeight="Bold"/>
+                </tc:CaptionValue>
+                <tc:CaptionValue Caption="DateTime 박스" Background="White" MarginCaption="5">
+                    <tc:DatePickerBtn Height="50" Margin="2" Background="LightGray" BorderBrush="Black" FontSize="20" FontWeight="Bold" DisplayDate="{Binding Date}" DatePickerFormat="DateTime"/>
+                </tc:CaptionValue>
+                <tc:CaptionValue Caption="Date 박스" Background="White" MarginCaption="5">
+                    <tc:DatePickerBtn Height="50" Margin="2" Background="LightGray" BorderBrush="Black" FontSize="20" FontWeight="Bold" DisplayDate="{Binding Date}" DatePickerFormat="Date"/>
+                </tc:CaptionValue>
+                <tc:CaptionValue Caption="Time 박스" Background="White" MarginCaption="5">
+                    <tc:DatePickerBtn Height="50" Margin="2" Background="LightGray" BorderBrush="Black" FontSize="20" FontWeight="Bold" DisplayDate="{Binding Date}" DatePickerFormat="Time"/>
+                </tc:CaptionValue>
+            </StackPanel>
+        </tc:GroupBox3D>        
+    </Canvas>
+</UserControl>

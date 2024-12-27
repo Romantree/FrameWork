@@ -1,0 +1,47 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\98.\uD14C\uC2A4\uD2B8\\TS.FW.Wpf.v2\\TS.FW.Wpf.v2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7FE775D7-4395-41B8-95E3-DE0FF5E52B80}|TS.FW.Wpf.v2\\TS.FW.Wpf.v2.csproj|d:\\98.\uD14C\uC2A4\uD2B8\\ts.fw.wpf.v2\\ts.fw.wpf.v2\\ts.fw.wpf.v2\\customcontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7FE775D7-4395-41B8-95E3-DE0FF5E52B80}|TS.FW.Wpf.v2\\TS.FW.Wpf.v2.csproj|solutionrelative:ts.fw.wpf.v2\\customcontrol1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 265,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomControl1.cs",
+              "DocumentMoniker": "D:\\98.\uD14C\uC2A4\uD2B8\\TS.FW.Wpf.v2\\TS.FW.Wpf.v2\\TS.FW.Wpf.v2\\CustomControl1.cs",
+              "RelativeDocumentMoniker": "TS.FW.Wpf.v2\\CustomControl1.cs",
+              "ToolTip": "D:\\98.\uD14C\uC2A4\uD2B8\\TS.FW.Wpf.v2\\TS.FW.Wpf.v2\\TS.FW.Wpf.v2\\CustomControl1.cs",
+              "RelativeToolTip": "TS.FW.Wpf.v2\\CustomControl1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T00:00:45.861Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

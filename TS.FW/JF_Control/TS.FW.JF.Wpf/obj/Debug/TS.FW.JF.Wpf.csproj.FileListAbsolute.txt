@@ -1,0 +1,12 @@
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\bin\Debug\TS.FW.JF.Wpf.dll
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\bin\Debug\TS.FW.JF.Wpf.pdb
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\bin\Debug\TS.FW.dll
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\bin\Debug\Newtonsoft.Json.dll
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\bin\Debug\TS.FW.pdb
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\bin\Debug\Newtonsoft.Json.pdb
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\bin\Debug\Newtonsoft.Json.xml
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\obj\Debug\TS.FW.JF.Wpf.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\obj\Debug\TS.FW.JF.Wpf.csproj.CopyComplete
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\obj\Debug\TS.FW.JF.Wpf.dll
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\obj\Debug\TS.FW.JF.Wpf.pdb
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF.Wpf\obj\Debug\TS.FW.JF.Wpf.csprojAssemblyReference.cache

@@ -1,0 +1,7 @@
+C:\TS.FW.ver1\TS.FW.Plc\TS.FW.Plc.dll
+C:\TS.FW.ver1\TS.FW.Plc\TS.FW.Plc.pdb
+C:\000.Source\TS.FW\TS.FW\TS.FW.Plc\obj\Debug\TS.FW.Plc.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\TS.FW.Plc\obj\Debug\TS.FW.Plc.dll
+C:\000.Source\TS.FW\TS.FW\TS.FW.Plc\obj\Debug\TS.FW.Plc.pdb
+C:\000.Source\TS.FW\TS.FW\TS.FW.Plc\obj\Debug\TS.FW.Plc.csproj.AssemblyReference.cache
+C:\000.Source\TS.FW\TS.FW\TS.FW.Plc\obj\Debug\TS.FW.Plc.csproj.Up2Date

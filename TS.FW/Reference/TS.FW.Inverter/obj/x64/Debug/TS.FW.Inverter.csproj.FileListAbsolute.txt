@@ -1,0 +1,12 @@
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\bin\x64\Debug\TS.FW.Inverter.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\bin\x64\Debug\TS.FW.Inverter.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\bin\x64\Debug\TS.FW.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\bin\x64\Debug\Newtonsoft.Json.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\bin\x64\Debug\TS.FW.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\bin\x64\Debug\Newtonsoft.Json.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\bin\x64\Debug\Newtonsoft.Json.xml
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\obj\x64\Debug\TS.FW.Inverter.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\obj\x64\Debug\TS.FW.Inverter.csproj.CopyComplete
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\obj\x64\Debug\TS.FW.Inverter.dll
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\obj\x64\Debug\TS.FW.Inverter.pdb
+C:\000.Source\TS.FW\TS.FW\Reference\TS.FW.Inverter\obj\x64\Debug\TS.FW.Inverter.csproj.AssemblyReference.cache

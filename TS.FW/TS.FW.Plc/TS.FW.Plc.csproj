@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D35E57B-B1D0-48F8-9A88-3EE8B525016C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TS.FW.Plc</RootNamespace>
+    <AssemblyName>TS.FW.Plc</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\TS.FW.ver1\TS.FW.Plc\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ActSupportMsgLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=9a04c259fe1fad37, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\..\Assembly\Plc\ActSupportMsgLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ActUtlTypeLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=627cb188e78f967a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <HintPath>..\..\Assembly\Plc\ActUtlTypeLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assembly\Plc\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcNetApi, Version=2.1.105.1, Culture=neutral, PublicKeyToken=9a40e993cbface53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assembly\Plc\OpcNetApi.dll</HintPath>
+    </Reference>
+    <Reference Include="OpcNetApi.Com, Version=2.1.105.1, Culture=neutral, PublicKeyToken=9a40e993cbface53, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Assembly\Plc\OpcNetApi.Com.dll</HintPath>
+    </Reference>
+    <Reference Include="S7.Net">
+      <HintPath>..\..\Assembly\Plc\S7.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="S7Net.UnitTest">
+      <HintPath>..\..\Assembly\Plc\S7Net.UnitTest.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communication\IPlcControl.cs" />
+    <Compile Include="Communication\PlcABControl.cs" />
+    <Compile Include="Communication\PlcEthernetControl.cs" />
+    <Compile Include="Communication\PlcLSControl.cs" />
+    <Compile Include="Communication\PlcMxControl.cs" />
+    <Compile Include="Communication\PlcSiemensControl.cs" />
+    <Compile Include="Communication\PlcSimulationControl.cs" />
+    <Compile Include="Config\IPlcConfigBase.cs" />
+    <Compile Include="Config\PlcABConfig.cs" />
+    <Compile Include="Config\PlcEthernetConfig.cs" />
+    <Compile Include="Config\PlcLSConfig.cs" />
+    <Compile Include="Config\PlcMxConfig.cs" />
+    <Compile Include="Config\PlcSiemensConfig.cs" />
+    <Compile Include="Config\PlcSimulationConfig.cs" />
+    <Compile Include="Core\PlcMxClient.cs" />
+    <Compile Include="Core\PlcOpcClient.cs" />
+    <Compile Include="Core\PlcTcpClient.cs" />
+    <Compile Include="Dto\Enum.cs" />
+    <Compile Include="Dto\IPlcDataBase.cs" />
+    <Compile Include="Dto\Packet\LS\Command\ILSCommandBase.cs" />
+    <Compile Include="Dto\Packet\LS\LSHeader.cs" />
+    <Compile Include="Dto\Packet\LS\LSRequest.cs" />
+    <Compile Include="Dto\Packet\LS\LSResponse.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\Command\IPlcCommandBase.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\Command\PlcRandomReadCommand.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\Command\PlcRandomWriteBitCommand.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\Command\PlcRandomWriteWordCommand.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\Command\PlcReadBitCommand.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\Command\PlcReadWordCommand.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\Command\PlcWriteBitCommand.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\Command\PlcWriteWordCommand.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\PlcHeader.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\PlcRequest.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\PlcResponse.cs" />
+    <Compile Include="Dto\Packet\Mitsubishi\RandomAddress.cs" />
+    <Compile Include="Dto\PlcBIt.cs" />
+    <Compile Include="Dto\PlcOpcData.cs" />
+    <Compile Include="Dto\PlcWord.cs" />
+    <Compile Include="Dto\PlcWordDataType.cs" />
+    <Compile Include="PlcControlManager.cs" />
+    <Compile Include="PlcTypes.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TS.FW\TS.FW.csproj">
+      <Project>{121d01e7-75a0-4c0e-be19-199a9c83cf6f}</Project>
+      <Name>TS.FW</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Dto\Packet\AB\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

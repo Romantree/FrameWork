@@ -1,0 +1,7 @@
+C:\TS.FW.ver1\TS.FW.JF_Control\TS.FW.JF.dll
+C:\TS.FW.ver1\TS.FW.JF_Control\TS.FW.JF.pdb
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF\obj\Debug\TS.FW.JF.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF\obj\Debug\TS.FW.JF.dll
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF\obj\Debug\TS.FW.JF.pdb
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF\obj\Debug\TS.FW.JF.csproj.AssemblyReference.cache
+C:\000.Source\TS.FW\TS.FW\JF_Control\TS.FW.JF\obj\Debug\TS.FW.JF.csproj.Up2Date

@@ -1,0 +1,13 @@
+C:\TS.FW.ver1\TS.FW.Dac.Cfg\x64\SQLite.Interop.dll
+C:\TS.FW.ver1\TS.FW.Dac.Cfg\x86\SQLite.Interop.dll
+C:\TS.FW.ver1\TS.FW.Dac.Cfg\TS.FW.Dac.Cfg.dll
+C:\TS.FW.ver1\TS.FW.Dac.Cfg\TS.FW.Dac.Cfg.pdb
+C:\000.Source\TS.FW\TS.FW\TS.FW.Dac.Cfg\obj\Debug\TS.FW.Dac.Cfg.csproj.CoreCompileInputs.cache
+C:\000.Source\TS.FW\TS.FW\TS.FW.Dac.Cfg\obj\Debug\TS.FW.Dac.Cfg.dll
+C:\000.Source\TS.FW\TS.FW\TS.FW.Dac.Cfg\obj\Debug\TS.FW.Dac.Cfg.pdb
+C:\TS.FW.ver1\x64\TS.FW.Dac.Cfg\x64\SQLite.Interop.dll
+C:\TS.FW.ver1\x64\TS.FW.Dac.Cfg\x86\SQLite.Interop.dll
+C:\TS.FW.ver1\x64\TS.FW.Dac.Cfg\TS.FW.Dac.Cfg.dll
+C:\TS.FW.ver1\x64\TS.FW.Dac.Cfg\TS.FW.Dac.Cfg.pdb
+C:\000.Source\TS.FW\TS.FW\TS.FW.Dac.Cfg\obj\Debug\TS.FW.Dac.Cfg.csproj.AssemblyReference.cache
+C:\000.Source\TS.FW\TS.FW\TS.FW.Dac.Cfg\obj\Debug\TS.FW.Da.1DB0C619.Up2Date

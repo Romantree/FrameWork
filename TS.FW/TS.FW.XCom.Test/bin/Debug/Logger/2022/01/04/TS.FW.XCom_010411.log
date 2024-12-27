@@ -1,0 +1,7 @@
+11:45:00.547 [E] SdcXComManager(Start) : XCom.sml => System.IO.FileNotFoundException: XCom.sml
+   위치: TS.FW.XCom.Core.XComReader.LoadData() 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\Core\XComReader.cs:줄 24
+   위치: TS.FW.XCom.XComManager.Start() 파일 C:\000.Source\TS.FW\TS.FW\Linkgenesis\TS.FW.XCom\XComManager.cs:줄 63
+11:47:42.036 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+11:47:50.749 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+11:49:41.109 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.
+11:55:49.778 [E] SdcXComManager(Xcom_SecsEvent) : Protection error XCom 의 하드웨어키의 체크에 실패 하였을 때 발생.

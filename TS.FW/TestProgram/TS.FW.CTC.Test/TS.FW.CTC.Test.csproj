@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{43C5CBE6-0A29-444A-8C1A-7A3AA9725C1A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TS.FW.CTC.Test</RootNamespace>
+    <AssemblyName>TS.FW.CTC.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\TS.FW.ver1\TestProgram\TS.FW.CTC.Test\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\TS.FW.ver1\TS.FW\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="TS.FW.Dac">
+      <HintPath>..\..\..\..\..\TS.FW.ver1\TS.FW.Dac\TS.FW.Dac.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dto\AlignRecipe.cs" />
+    <Compile Include="Dto\CenteringRecipe.cs" />
+    <Compile Include="Dto\CotterRecipe.cs" />
+    <Compile Include="Dto\FlowRecipe.cs" />
+    <Compile Include="Dto\ImprintRecipe.cs" />
+    <Compile Include="Dto\IUintRecipe.cs" />
+    <Compile Include="Dto\LotRecipe.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="Managers\ScheduleManager.cs" />
+    <Compile Include="Managers\Schedule\ScheduleItem.cs" />
+    <Compile Include="Models\AlignRecipeModel.cs" />
+    <Compile Include="Models\CenteringRecipeModel.cs" />
+    <Compile Include="Models\CotterRecipeModel.cs" />
+    <Compile Include="Models\FlowRecipeModel.cs" />
+    <Compile Include="Models\ImprintRecipeModel.cs" />
+    <Compile Include="Models\IUintRecipeModel.cs" />
+    <Compile Include="Models\LotRecipeModel.cs" />
+    <Compile Include="Process\IProcessTimer.cs" />
+    <Compile Include="Process\PortData.cs" />
+    <Compile Include="Process\ProcessStep.cs" />
+    <Compile Include="Process\Robot\Item\IRobotSeq.cs" />
+    <Compile Include="Process\Robot\Item\RobotArm.cs" />
+    <Compile Include="Process\Robot\Item\RobotHistory.cs" />
+    <Compile Include="Process\Robot\RobotProcess.Work.cs" />
+    <Compile Include="Process\Robot\RobotProcess.cs" />
+    <Compile Include="Process\Robot\RobotStep.cs" />
+    <Compile Include="Process\Work\Align\AlignProcess.cs" />
+    <Compile Include="Process\Work\Align\AlignProcess.Work.cs" />
+    <Compile Include="Process\Work\Align\AlignStep.cs" />
+    <Compile Include="Process\Work\Centering\CenteringProcess.cs" />
+    <Compile Include="Process\Work\Centering\CenteringProcess.Work.cs" />
+    <Compile Include="Process\Work\Centering\CenteringStep.cs" />
+    <Compile Include="Process\Work\Cotter\CotterProcess.cs" />
+    <Compile Include="Process\Work\Cotter\CotterProcess.Work.cs" />
+    <Compile Include="Process\Work\Cotter\CotterStep.cs" />
+    <Compile Include="Process\Work\Item\WorkItem.cs" />
+    <Compile Include="Process\Work\Item\WorkRecipe.cs" />
+    <Compile Include="Process\Work\Item\WorkSeq.cs" />
+    <Compile Include="Process\Work\Item\WorkStep.cs" />
+    <Compile Include="Process\Work\IWorkProcess.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="Views\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Resources\Brushs.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Controls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\Icons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Resources\IconsNonShared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Reference\TS.FW.Robot.RC100\TS.FW.Robot.RC100.csproj">
+      <Project>{e47f2908-3575-4ea5-af54-673a9ad8d67b}</Project>
+      <Name>TS.FW.Robot.RC100</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TS.FW.Device\TS.FW.Device.csproj">
+      <Project>{7459f229-f1ed-47b0-922f-b91eaac9b71f}</Project>
+      <Name>TS.FW.Device</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TS.FW.Wpf\TS.FW.Wpf.csproj">
+      <Project>{147e9f91-4792-4280-8af8-7976bbd44a25}</Project>
+      <Name>TS.FW.Wpf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TS.FW\TS.FW.csproj">
+      <Project>{121d01e7-75a0-4c0e-be19-199a9c83cf6f}</Project>
+      <Name>TS.FW</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

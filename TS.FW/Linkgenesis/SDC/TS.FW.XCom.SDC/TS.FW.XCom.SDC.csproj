@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E81FFF7E-D37A-4438-800A-3BC83C8D9159}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TS.FW.XCom.SDC</RootNamespace>
+    <AssemblyName>TS.FW.XCom.SDC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\TS.FW.ver1\Linkgenesis\SDC\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\Assembly\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XCOMLib, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d44180783df80efe, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Assembly\XCOMLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="OLED\V227\Ack.cs" />
+    <Compile Include="OLED\V227\eCEID.cs" />
+    <Compile Include="OLED\V227\Enum.cs" />
+    <Compile Include="OLED\V227\eRCMD.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F001_AreyouThereReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F002_OnLineData_EQ_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F002_OnLineData_Host_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F003_SelectedEQStateReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F004_SelectedEQStateData_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F005_FromatStateReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_CurrentRecipeInquiry_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_EQOnlineParam_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_GlassStockInfo_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_GlassTracking_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_InEQPathDefinitionInquiry_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_InquireLibraryState_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_InquireMaterialInfo_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_InquireProductionPlanInfo_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_InquireRecipeRelationinEQs_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_MaskStock_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_MaterialTracking_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_ModuleState_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_PortState_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F006_FromatStateData_ProcessStepInquiry_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F007_ReqOnlineModeChange_Model.cs" />
+    <Compile Include="OLED\V227\Stream001\S1F008_OnlineAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F015_NewEQConstantSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F016_NewEQConstantAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F023_TraceInitializeSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F024_TraceInitializeAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F029_EQConstantNamelistReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F030_EQConstantNamelist_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F031_DateTimeSetReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F032_DateTimeSetAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F041_HostCommandSend_EQCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F041_HostCommandSend_GlassProcessCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F041_HostCommandSend_InEQPathChangeCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F041_HostCommandSend_JobProcessCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F041_HostCommandSend_MaskStockChamberControlCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F041_HostCommandSend_MaterialProcessCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F041_HostCommandSend_PortCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F041_HostCommandSend_SortCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F042_HostCommandAck_EQCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F042_HostCommandAck_GlassCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F042_HostCommandAck_InEQPathChangeCommand_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F042_HostCommandAck_MaskStockChamberControlCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F042_HostCommandAck_MaterialProcessCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F042_HostCommandAck_PortCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F042_HostCommandAck_ProcessCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F042_HostCommandAck_SortCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F101_OperatorCall_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F102_OperatorCallAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F103_EQOnlineParamChange_Model.cs" />
+    <Compile Include="OLED\V227\Stream002\S2F104_EQOnlineParamAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F001_MaterialStateReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F002_MaterialStateData_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F101_CassetteInfo_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F102_CassetteInfoAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F103_ProductionPlanInfoSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F104_ProductionPlanInfoAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F105_ModulesMaterialInfoSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F106_ModulesMaterialInfoAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F111_ModulesMaterialCodeInfoSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F112_ModulesMaterialCodeInfoAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F115_MaterialInfo_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F116_MaterialAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F117_ModuleLabelInfoSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F118_ModuleLabelInfoAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F119_ModuleLabelSerialQuantityInfoSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F120_ModuleLabelSerialQuantityInfoAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F121_GlassUnitInfo_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F122_GlassUnitInfoAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F125_MaterialUnitInfo_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F126_MaterialUnitInfoAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F217_LotTagInfoSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream003\S3F218_LotTagInfoAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream005\S5F001_AlarmReportSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream005\S5F002_AlarmReportAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream005\S5F005_AlarmListReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream005\S5F006_AlarmListAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream005\S5F101_WaitingResetAlarmsList_Model.cs" />
+    <Compile Include="OLED\V227\Stream005\S5F102_WaitingResetAlarmsListAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F001_TraceDataSend_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_EQEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_EQParamEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_GlassLoadEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_GlassProcessEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_InEQRouteProductionPlanEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_JobPermissionEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_JobProcessEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_MaskStockEQEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_MaskStockStateChangeEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_MaterialEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_MaterialJobProcessEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_MaterialLoadEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_MaterialProcessEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_MaterialStageEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_ModuleCarrierProcessEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_ModuleLabelPrintEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_ModuleMaterialAssembleEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_ModuleMaterialEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_ModuleProductionPlanEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_PortEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_ProcessStatusEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_ReadingModuleEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_SpecifiedControlEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F011_EventReportSend_SplitRecipeManagementEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F012_Event_ReportAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F013_NameListVariableDataSend_GlassData_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F013_NameListVariableDataSend_GlassLotData_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F013_NameListVariableDataSend_LotData_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F013_NameListVariableDataSend_MaterialData_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F013_NameListVariableDataSend_MaterialLotData_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F014_AnnotatedEventReportAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F101_VariableDataNameListReportReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream006\S6F102_VariableDataNameListReportData_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F001_PPL_Inquire_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F002_PPL_Grant_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F009_MaterialIDReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F010_MaterialIDData_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F021_Remote_FPP_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F022_Remote_FPP_Ack_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F023_FPP_Send_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F024_FPP_Ack_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F025_FPP_Req_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F026_FPP_Data_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F031_RemoteFPP_EVP_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F032_RemoteFPP_EVP_Ack_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F033_FPP_EVP_Send_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F034_FPP_EVP_Ack_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F035_FPP_EVP_Req_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F036_FPP_EVP_Data_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F101_CurrentEQPPIDListReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F102_CurrentEQPPIDData_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F103_PPIDExistenceCheck_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F104_PPIDExistenceCheckAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F107_PPBodyModifyReport_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F108_PPBodyModifyReportAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F109_CurrentRunningEQPPIDReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F110_CurrentRunningEQPPIDData_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F117_PPBodyChangedReportEVP_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F118_PPBodyChangedReportEVP_Ack_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F123_RunRecipeModificationEVP_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F124_RecipeModificationEVP_Ack_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F125_RunRecipeParamEVP_Req_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F126_RunRecipeParamDataEVP_Ack_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F207_RunRecipeBodyModifyReportEVP_Model.cs" />
+    <Compile Include="OLED\V227\Stream007\S7F208_RunRecipeBodyModifyReportEVP_Ack_Model.cs" />
+    <Compile Include="OLED\V227\Stream008\S8F001_Multi_UseDataSet_Model.cs" />
+    <Compile Include="OLED\V227\Stream008\S8F002_Multi_UseDataSetAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream008\S8F003_Multi_UseDataInquiry_Model.cs" />
+    <Compile Include="OLED\V227\Stream008\S8F004_Multi_UseDataInquiryAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream008\S8F011_MassDataTransfer_Model.cs" />
+    <Compile Include="OLED\V227\Stream008\S8F012_MassData_TransferAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream008\S8F013_MassData_Report_Model.cs" />
+    <Compile Include="OLED\V227\Stream008\S8F014_MassDataReportAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream010\S10F003_TerminalDisplaySingle_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F001_PPC_DataListReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F002_PPC_DataListAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F003_PPC_DataSet_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F004_PPC_DataSetAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F005_PPC_DataDeletionCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F006_PPC_DataDeletionCmdAckd_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F011_PPC_DataRunningEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F012_PPC_DataRunningEventAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F015_PPC_Event_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F016_PPC_EventAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F101_APC_DataReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F102_APC_DataAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F103_APC_DataSet_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F104_APC_DataSetAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F105_APC_DataDeleteCommand_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F106_APC_DataDeleteCmdAckd_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F111_APC_StartReport_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F112_APC_StartReportAckd_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F113_APC_EndReport_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F114_APC_EndReportAckd_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F115_APC_DataReport_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F116_APC_DataReportAckd_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F121_RPC_ProcessChangeDataListReq_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F122_RPC_ProcessChangeDataListAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F123_RPC_ProcessChangeSet_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F124_RPC_ProcessChangeSetAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F125_RPC_DataDeleteCmd_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F126_RPC_DataDeleteCmdAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F131_RPC_ProcessStartedEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F132_RPC_ProcessStartedEventAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F133_RPC_ProcessEndedEvent_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F134_RPC_ProcessEndedEventAck_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F135_RPC_Event_Model.cs" />
+    <Compile Include="OLED\V227\Stream016\S16F136_RPC_EventAck_Model.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SdcXComManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\TS.FW\TS.FW.csproj">
+      <Project>{121d01e7-75a0-4c0e-be19-199a9c83cf6f}</Project>
+      <Name>TS.FW</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\TS.FW.XCom\TS.FW.XCom.csproj">
+      <Project>{fa5f2f7a-1032-4cae-a483-3c66fe5224d5}</Project>
+      <Name>TS.FW.XCom</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\OLED\V227\XCom.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\OLED\V227\XCom.lbm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\OLED\V227\XCom.sml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\OLED\V235\" />
+    <Folder Include="LED\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
